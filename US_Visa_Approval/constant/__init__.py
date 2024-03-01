@@ -13,7 +13,7 @@ ARTIFACT_DIR: str = "artifact"
 MODEL_FILE_NAME = "model.pkl"
 
 TARGET_COLUMN = "case_status"
-CURRENT_YEAR = date.today().now()
+CURRENT_YEAR = date.today().year
 PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 
 FILE_NAME: str = "usvisa.csv"
