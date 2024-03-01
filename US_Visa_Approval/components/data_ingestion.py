@@ -5,7 +5,7 @@ from US_Visa_Approval.entity.artifact_entity import DataIngestionArtifact
 from US_Visa_Approval.logger import logging
 from US_Visa_Approval.exception import USVisaException
 
-from data_access.usvisa_data import USVisaData
+from US_Visa_Approval.data_access.usvisa_data import USVisaData
 
 import os
 import sys
@@ -41,7 +41,7 @@ class DataIngestion:
 
             logging.info(f"Saving the exported data into feature store file path: {feature_store_file_path}")
 
-            dataframe.to_csv(feature_store_file_path,index=True,header=True)
+            dataframe.to_csv(feature_store_file_path,index=False,header=True)
 
             return dataframe
 
