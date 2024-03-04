@@ -4,3 +4,9 @@ from dataclasses import dataclass
 class DataIngestionArtifact:
     train_file_path: str 
     test_file_path:str
+
+@dataclass
+class DataValidationConfig:
+    validation_status: bool
+    message:str
+    drift_report_file_path: str 
