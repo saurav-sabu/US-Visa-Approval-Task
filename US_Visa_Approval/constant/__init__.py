@@ -16,6 +16,8 @@ TARGET_COLUMN = "case_status"
 CURRENT_YEAR = date.today().year
 PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 
+SCHEMA_FILE_PATH = os.path.join("config","schema.yaml")
+
 FILE_NAME: str = "usvisa.csv"
 TRAIN_FILE_NAME : str = "train.csv"
 TEST_FILE_NAME : str = "test.csv"
